@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="SamayaShaji">
+    <title>Online Shopping Portal</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- navbar start -->
+    <div class="responsive-logo">Logo</div>
+    <div class="topnav" id="myTopnav">
+      <a href="#home" class="active" id="logo">Logo</a>
+      <a href="#news">About</a>
+      <a href="#contact">Service</a>
+      <a href="#about">Product</a>
+      <a href="#search">Search</a>
+      <a href="javascript:void(0);" class="icon">
+        <i class="fa fa-bars" onclick="myFunction()"></i>
+      </a>
+      <div class="search-container">
+        <form>
+          <input type="text" placeholder="Search.." name="search" />
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+        <button type="submit" class="shopping-icon">
+          <i class="fas fa-shopping-cart"></i>
+        </button>
+      </div>
+    </div>
+    <!-- navbar end -->
+
+    <div class="landing-page">
+      <div class="right-container">
+        <img src="./assets/mobile.svg" class="mobile-img"/>
+      </div>
+      <div class="left-container">
+        <h1 class="head-text">Online<br/>Shopping</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec mauris
+          sit tellus, fermentum ut pulvinar lectus egestas. Eleifend a leo quam
+          sit.
+        </p>
+        <div class="img-container">
+          <div class="landing-img">
+            <img src="./assets/unsplash_B2w4rdIihEo.jpg" />
+            <p>Mobile</p>
+          </div>
+          <div class="landing-img">
+            <img src="./assets/unsplash_7OFnb7NOvjw.jpg" />
+            <p>Tablet</p>
+          </div>
+          <div class="landing-img">
+            <img src="./assets/unsplash_1SAnrIxw5OY.jpg" />
+            <p>Computer</p>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/wave (3).svg" class="wave-img"/>
+
+      
+    </div>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+  </body>
+</html>
